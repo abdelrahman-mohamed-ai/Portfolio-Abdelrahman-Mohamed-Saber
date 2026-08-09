@@ -38,7 +38,7 @@ pageLinks.forEach((link) => {
 
     event.preventDefault();
     document.body.classList.add('is-leaving');
-    window.setTimeout(() => window.location.assign(destination.href), 460);
+    window.setTimeout(() => window.location.assign(destination.href), 190);
   });
 });
 
@@ -59,31 +59,4 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
   }, { threshold: 0.08, rootMargin: '0px 0px -24px' });
 
   revealItems.forEach((item) => revealObserver.observe(item));
-}
-
-const visionShell = document.querySelector('[data-vision-shell]');
-const canUsePointerMotion = !reducedMotion && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-
-if (visionShell instanceof HTMLElement && canUsePointerMotion) {
-  let framePending = false;
-  let pointerX = 0;
-  let pointerY = 0;
-
-  visionShell.addEventListener('pointermove', (event) => {
-    const bounds = visionShell.getBoundingClientRect();
-    pointerX = ((event.clientX - bounds.left) / bounds.width - 0.5) * 2;
-    pointerY = ((event.clientY - bounds.top) / bounds.height - 0.5) * 2;
-    if (framePending) return;
-    framePending = true;
-    window.requestAnimationFrame(() => {
-      visionShell.style.setProperty('--pointer-x', pointerX.toFixed(3));
-      visionShell.style.setProperty('--pointer-y', pointerY.toFixed(3));
-      framePending = false;
-    });
-  });
-
-  visionShell.addEventListener('pointerleave', () => {
-    visionShell.style.setProperty('--pointer-x', '0');
-    visionShell.style.setProperty('--pointer-y', '0');
-  });
 }
