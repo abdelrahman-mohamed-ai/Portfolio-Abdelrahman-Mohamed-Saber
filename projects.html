@@ -1,138 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Details | Abdelrahman Mohamed</title>
-  <meta name="description" content="Evidence-led project details from Abdelrahman Mohamed across AI, computer vision, image processing, and full-stack web systems." />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#070b16" />
+  <title>Projects | Abdelrahman Mohamed</title><meta name="description" content="Project case studies across computer vision, image processing, and full-stack systems by Abdelrahman Mohamed." />
   <link rel="canonical" href="https://abdelrahman-mohamed-ai.github.io/Portfolio-Abdelrahman-Mohamed-Saber/projects.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page page-work">
   <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="index.html" aria-label="Abdelrahman Mohamed home">
-        <span class="brand-mark" aria-hidden="true">AM</span>
-        <span>Abdelrahman Mohamed</span>
+  <header class="site-header"><nav class="nav container" aria-label="Primary navigation">
+    <a class="brand" href="index.html" data-page-link aria-label="Abdelrahman Mohamed home"><span class="brand-sigil" aria-hidden="true">AM</span><span class="brand-copy"><strong>Abdelrahman Mohamed</strong><small>AI / CV portfolio</small></span></a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div class="nav-links" id="nav-links"><a href="about.html" data-page-link>Profile</a><a href="projects.html" data-page-link aria-current="page">Work</a><a href="experience.html" data-page-link>Experience</a><a href="skills.html" data-page-link>Stack</a><a href="contact.html" data-page-link>Contact</a><a class="nav-github" href="https://github.com/abdelrahman-mohamed-ai" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a></div>
+  </nav></header>
+  <main id="main-content" class="page-content container">
+    <section class="page-intro page-intro-split" data-reveal><div><p class="eyebrow"><span class="eyebrow-pulse" aria-hidden="true"></span> Project library / 04</p><h1>Evidence-led work, each with its own page.</h1></div><p class="page-lede">Every project below has a defined scope and an honest status. Open the case study for the system, stack, and implementation focus.</p></section>
+    <section class="project-library" aria-label="Project case studies">
+      <a class="project-entry project-entry-feature" href="visionguard.html" data-page-link data-reveal>
+        <div class="project-entry-visual visionguard-visual" aria-hidden="true"><span class="visual-grid"></span><span class="visual-box visual-box-one"></span><span class="visual-box visual-box-two"></span><span class="visual-scan"></span><span>VISIONGUARD / 01</span></div>
+        <div class="project-entry-body"><div class="project-meta"><span>Computer Vision</span><span class="status status-progress">Current Graduation Project</span></div><h2>VisionGuard AI</h2><p>A safety-monitoring prototype connecting a mobile interface, a local camera gateway, live monitoring, alert handling, evidence, and computer-vision integrations.</p><ul class="project-stack"><li>React Native / Expo</li><li>Python &amp; Flask</li><li>OpenCV</li><li>SQLite</li></ul><span class="project-cta">Open case study <span aria-hidden="true">&#8594;</span></span></div>
       </a>
-      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
-        Menu
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#projects">Work</a>
-        <a href="index.html#contact">Contact</a>
-        <a class="nav-projects" href="https://github.com/abdelrahman-mohamed-ai" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <section class="page-hero container" data-reveal>
-      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Project library</p>
-      <h1>Evidence-led projects, with scope stated clearly.</h1>
-      <p class="hero-text">Each entry below describes what is currently implemented. The graduation project is clearly marked, and public code is linked directly.</p>
-      <a class="button button-secondary" href="index.html">Back to portfolio</a>
-    </section>
-
-    <section class="section container case-study-list">
-      <article class="case-study" data-reveal>
-        <div class="case-study-meta">
-          <span>01</span>
-          <span class="status status-local">Graduation project</span>
-        </div>
-        <div class="case-study-content">
-          <p class="section-label">VisionGuard AI · Current graduation project</p>
-          <h2>Safety monitoring with a local camera gateway.</h2>
-          <p>VisionGuard AI is the current graduation project. It combines an Expo / React Native interface with a local Python gateway for authenticated, workspace-aware camera operations. The implemented system covers camera configuration and connection checks, live MJPEG streaming, persisted alerts and evidence, model-capability reporting, and CPU-based face matching.</p>
-          <div class="case-study-details">
-            <div>
-              <h3>Implemented focus</h3>
-              <ul>
-                <li>Camera operations and live monitoring workflows</li>
-                <li>Alert and evidence handling with local persistence</li>
-                <li>Computer-vision integration points for OpenCV and supported models</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Stack</h3>
-              <p>React Native, Expo Router, TypeScript, Python, Flask, SQLite, OpenCV, TensorFlow / Ultralytics integrations.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="case-study" data-reveal>
-        <div class="case-study-meta">
-          <span>02</span>
-          <span class="status status-public">Open source</span>
-        </div>
-        <div class="case-study-content">
-          <p class="section-label">Distributed Inventory Dashboard · Full stack</p>
-          <h2>Inventory operations with a distributed data layer.</h2>
-          <p>A full-stack inventory-management dashboard structured around a React interface, Node.js and Express services, and a MongoDB replica set.</p>
-          <div class="case-study-details">
-            <div>
-              <h3>Stack</h3>
-              <p>React, Node.js, Express, MongoDB Replica Set, JavaScript.</p>
-            </div>
-            <div>
-              <h3>Source</h3>
-              <a class="text-link" href="https://github.com/abdelrahman-mohamed-ai/distributed-inventory-dashboard" target="_blank" rel="noreferrer">Open repository <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="case-study" data-reveal>
-        <div class="case-study-meta">
-          <span>03</span>
-          <span class="status status-public">Open source</span>
-        </div>
-        <div class="case-study-content">
-          <p class="section-label">Image Processing Labs Web App · Applied computing</p>
-          <h2>Core image-processing operations implemented from scratch.</h2>
-          <p>A Flask web application focused on hands-on image processing, with core operations implemented manually to make the underlying concepts visible and testable.</p>
-          <div class="case-study-details">
-            <div>
-              <h3>Stack</h3>
-              <p>Python, Flask, image-processing algorithms.</p>
-            </div>
-            <div>
-              <h3>Source</h3>
-              <a class="text-link" href="https://github.com/abdelrahman-mohamed-ai/image-processing-labs-webapp" target="_blank" rel="noreferrer">Open repository <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="contact-section container" data-reveal>
-      <div>
-        <p class="section-label">Next step</p>
-        <h2>Interested in the implementation details?</h2>
-        <p>Reach out for a technical conversation, source walkthrough, or collaboration inquiry.</p>
-      </div>
-      <div class="contact-actions">
-        <a class="button button-primary" href="mailto:askasem76@gmail.com">Email Abdelrahman</a>
-        <a class="button button-secondary" href="index.html#contact">Professional links</a>
+      <div class="project-library-grid">
+        <a class="project-entry" href="image-processing.html" data-page-link data-reveal><div class="project-entry-visual image-visual" aria-hidden="true"><span></span><i></i><b></b><em>IMG / LABS</em></div><div class="project-entry-body"><div class="project-meta"><span>Image Processing</span><span class="status status-public">Open Source</span></div><h2>Image Processing Labs</h2><p>A Flask web app demonstrating core image-processing operations implemented manually from scratch.</p><ul class="project-stack"><li>Python</li><li>Flask</li><li>Image Processing</li></ul><span class="project-cta">Open case study <span aria-hidden="true">&#8594;</span></span></div></a>
+        <a class="project-entry" href="inventory-dashboard.html" data-page-link data-reveal><div class="project-entry-visual inventory-visual" aria-hidden="true"><span class="inventory-node node-a"></span><span class="inventory-node node-b"></span><span class="inventory-node node-c"></span><i></i><em>DATA / SYNC</em></div><div class="project-entry-body"><div class="project-meta"><span>Full-Stack System</span><span class="status status-public">Open Source</span></div><h2>Distributed Inventory Dashboard</h2><p>An inventory-management dashboard structured around React, Node.js services, and MongoDB replica-set storage.</p><ul class="project-stack"><li>React</li><li>Node.js &amp; Express</li><li>MongoDB</li></ul><span class="project-cta">Open case study <span aria-hidden="true">&#8594;</span></span></div></a>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Abdelrahman Mohamed. Built around real work.</p>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="container footer-layout"><div><span class="footer-mark">AM</span><p>Abdelrahman Mohamed<br><small>AI &amp; Computer Vision Portfolio</small></p></div><div class="footer-links"><a href="about.html" data-page-link>Profile</a><a href="experience.html" data-page-link>Experience</a><a href="contact.html" data-page-link>Contact</a></div><p class="footer-copy">&copy; <span id="year"></span></p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
