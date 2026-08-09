@@ -1,279 +1,267 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdelrahman Mohamed Saber | AI Engineer</title>
-  <meta name="description" content="4D-style AI portfolio for Abdelrahman Mohamed Saber." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdelrahman Mohamed | AI Systems & Training Coordination</title>
+  <meta name="description" content="Portfolio of Abdelrahman Mohamed — Training Coordinator at EYouth on DEPI, building practical AI, computer vision, backend, and full-stack systems." />
+  <link rel="canonical" href="https://abdelrahman-mohamed-ai.github.io/Portfolio-Abdelrahman-Mohamed-Saber/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abdelrahman Mohamed | AI Systems & Training Coordination" />
+  <meta property="og:description" content="Training Coordinator at EYouth — DEPI, building practical AI, computer vision, backend, and full-stack systems." />
+  <meta property="og:url" content="https://abdelrahman-mohamed-ai.github.io/Portfolio-Abdelrahman-Mohamed-Saber/" />
+  <meta name="twitter:card" content="summary" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="intro-screen" id="intro-screen" role="dialog" aria-label="Welcome intro">
-    <video class="intro-video" autoplay muted loop playsinline>
-      <source src="https://cdn.coverr.co/videos/coverr-coding-on-a-laptop-1579/1080p.mp4" type="video/mp4" />
-    </video>
-    <div class="intro-overlay" aria-hidden="true"></div>
-    <canvas class="intro-strike" id="intro-strike" aria-hidden="true"></canvas>
-    <div class="intro-fire-curtain" id="intro-fire-curtain" aria-hidden="true">
-      <div class="curtain-wing left">
-        <span class="fire-sheet back"></span>
-        <span class="fire-sheet mid"></span>
-        <span class="fire-sheet front"></span>
-        <span class="fire-edge"></span>
-      </div>
-      <div class="curtain-wing right">
-        <span class="fire-sheet back"></span>
-        <span class="fire-sheet mid"></span>
-        <span class="fire-sheet front"></span>
-        <span class="fire-edge"></span>
-      </div>
-      <span class="curtain-seam"></span>
-    </div>
-    <div class="intro-content">
-      <p class="intro-kicker" id="intro-kicker-text">Igniting AI Interface</p>
-      <h1 class="intro-title" aria-label="Welcome to my portfolio">
-        <span id="intro-typed"></span>
-        <span class="typing-caret" aria-hidden="true"></span>
-      </h1>
-      <p class="intro-name" id="intro-subtitle">Abdelrahman Mohamed Saber | AI Engineer</p>
-      <div class="intro-actions">
-        <button class="btn btn-ghost intro-sound" id="intro-sound" type="button">Enable Sound</button>
-        <button class="btn btn-secondary intro-skip" id="intro-skip" type="button">Skip Intro</button>
-      </div>
-    </div>
-    <div class="intro-line" aria-hidden="true"></div>
-  </div>
-
-  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
-  <canvas class="ai-grid" id="ai-grid" aria-hidden="true"></canvas>
-  <canvas class="energy-field" id="energy-field" aria-hidden="true"></canvas>
-  <div class="robot-scene" id="robot-scene" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="orb orb-1" aria-hidden="true"></div>
-  <div class="orb orb-2" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header" id="top">
-    <nav class="nav container">
-      <a href="#top" class="logo" aria-label="Home">AMS</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Abdelrahman Mohamed home">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span>Abdelrahman Mohamed</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
       <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
-        <a href="#services">AI Services</a>
-        <a href="#work">AI Projects</a>
-        <a href="#process">Workflow</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a href="projects.html">All Projects</a>
-        <span class="nav-indicator" id="nav-indicator" aria-hidden="true"></span>
+        <a class="nav-projects" href="projects.html">Project details</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero container reveal" id="about">
-      <div class="hero-depth" aria-hidden="true">
-        <span class="depth-layer d1"></span>
-        <span class="depth-layer d2"></span>
-        <span class="depth-layer d3"></span>
-        <div class="ai-core" id="ai-core">
-          <span class="core-ring ring-1"></span>
-          <span class="core-ring ring-2"></span>
-          <span class="core-ring ring-3"></span>
-          <span class="core-ring ring-4"></span>
-          <span class="core-node n1"></span>
-          <span class="core-node n2"></span>
-          <span class="core-node n3"></span>
-          <span class="core-node n4"></span>
-          <span class="core-node n5"></span>
-          <span class="core-node n6"></span>
-        </div>
-      </div>
-      <div class="hero-copy">
-        <p class="eyebrow electric">AI Track | Available for Projects</p>
-        <h1 class="ai-headline">I build smart AI systems with immersive 4D-style experiences.</h1>
-        <p class="hero-text">I am Abdelrahman Mohamed Saber, an AI-focused developer building intelligent assistants, NLP pipelines, and computer vision solutions with cinematic product presentation.</p>
+  <main id="main-content">
+    <section class="hero container" id="about">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Training Coordinator at EYouth · DEPI</p>
+        <h1>AI, computer vision, and full-stack systems built for practical delivery.</h1>
+        <p class="hero-text">
+          I am Abdelrahman Mohamed, a Training Coordinator at EYouth supporting the Digital Egypt Pioneers Initiative (DEPI). Alongside program operations, I build hands-on systems that connect AI and computer vision with Python, backend services, databases, and web applications.
+        </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Build AI With Me</a>
-          <a class="btn btn-secondary" href="#work">See AI Projects</a>
-          <a class="btn btn-ghost" href="mailto:askasem76@gmail.com?subject=CV%20Request">Request CV</a>
+          <a class="button button-primary" href="#projects">Explore selected work</a>
+          <a class="button button-secondary" href="mailto:askasem76@gmail.com">Get in touch</a>
         </div>
+        <dl class="hero-facts" aria-label="Quick profile">
+          <div>
+            <dt>Based in</dt>
+            <dd>Cairo, Egypt</dd>
+          </div>
+          <div>
+            <dt>Technical focus</dt>
+            <dd>AI & computer vision</dd>
+          </div>
+          <div>
+            <dt>Current role</dt>
+            <dd>EYouth · DEPI</dd>
+          </div>
+        </dl>
       </div>
 
-      <figure class="hero-photo-card tilt electric-border" aria-label="Professional portrait">
-        <div class="hero-photo-shell">
-          <img
-            class="hero-photo"
-            src="assets/profile-suit-half.jpg?v=20260211a"
-            alt="Professional portrait of Abdelrahman Mohamed Saber"
-            width="900"
-            height="1125"
-            loading="eager"
-          />
-          <span class="hero-photo-sheen" aria-hidden="true"></span>
-          <span class="hero-photo-glow" aria-hidden="true"></span>
+      <figure class="portrait-card" data-reveal>
+        <div class="portrait-frame">
+          <img src="assets/profile-suit-half.jpg" width="900" height="1125" alt="Abdelrahman Mohamed in a grey suit" fetchpriority="high" />
         </div>
         <figcaption>
-          <span class="hero-photo-name">Abdelrahman M. Saber</span>
-          <span class="hero-photo-role">AI Engineer</span>
+          <span>Abdelrahman Mohamed</span>
+          <small>AI systems & training coordination</small>
         </figcaption>
       </figure>
-
-      <aside class="hero-panel electric-border" aria-label="Quick profile">
-        <h2>AI Snapshot</h2>
-        <ul>
-          <li><strong>Stack:</strong> Python, TensorFlow, PyTorch</li>
-          <li><strong>Strength:</strong> NLP, CV, Prompt Engineering</li>
-          <li><strong>Focus:</strong> Accuracy, Explainability, Deployment</li>
-          <li><strong>Status:</strong> Open to AI freelance and full-time roles</li>
-        </ul>
-      </aside>
     </section>
 
-    <section class="metrics container reveal" aria-label="Key metrics">
-      <article class="tilt"><strong>12+</strong><span>AI Models Built</span></article>
-      <article class="tilt"><strong>6+</strong><span>Deployed AI Demos</span></article>
-      <article class="tilt"><strong>95%</strong><span>Best Validation Accuracy</span></article>
-      <article class="tilt"><strong>24h</strong><span>Fast Project Updates</span></article>
-    </section>
-
-    <section class="services container reveal" id="services">
-      <div class="section-head">
-        <p class="eyebrow">AI Services</p>
-        <h2>What I can build for your AI product</h2>
+    <section class="section container" aria-labelledby="value-title">
+      <div class="section-heading" data-reveal>
+        <p class="section-label">What I bring</p>
+        <h2 id="value-title">A technical builder’s mindset with an operator’s discipline.</h2>
       </div>
-      <div class="cards three">
-        <article class="card tilt">
-          <h3>AI Chatbot Development</h3>
-          <p>Context-aware assistants for support, lead qualification, and internal workflows with prompt tuning.</p>
+      <div class="value-grid">
+        <article class="value-card" data-reveal>
+          <span class="card-index">01</span>
+          <h3>AI systems</h3>
+          <p>Practical machine-learning, computer-vision, and image-processing work grounded in usable applications.</p>
         </article>
-        <article class="card tilt">
-          <h3>Computer Vision Solutions</h3>
-          <p>Image classification and detection pipelines for automation and monitoring use cases.</p>
+        <article class="value-card" data-reveal>
+          <span class="card-index">02</span>
+          <h3>Full-stack delivery</h3>
+          <p>Python services, APIs, databases, and responsive interfaces that turn a technical idea into a working system.</p>
         </article>
-        <article class="card tilt">
-          <h3>NLP and Text Intelligence</h3>
-          <p>Sentiment analysis, text classification, and retrieval workflows for multilingual content.</p>
+        <article class="value-card" data-reveal>
+          <span class="card-index">03</span>
+          <h3>Training operations</h3>
+          <p>Structured coordination across schedules, teams, participants, reports, events, and stakeholder communication.</p>
         </article>
       </div>
     </section>
 
-    <section class="work container reveal" id="work">
-      <div class="section-head">
-        <p class="eyebrow">Featured AI Work</p>
-        <h2>Selected AI projects</h2>
-      </div>
-      <div class="cards three">
-        <article class="card project tilt hologram">
-          <div class="project-thumb thumb-a" aria-hidden="true"></div>
-          <h3>Arabic RAG Assistant</h3>
-          <p>Retrieval-augmented chatbot connected to custom documents with grounded and source-aware answers.</p>
-          <p class="tags">Python | LangChain | Vector DB</p>
-        </article>
-        <article class="card project tilt hologram">
-          <div class="project-thumb thumb-b" aria-hidden="true"></div>
-          <h3>Vision Defect Detection</h3>
-          <p>CNN model for visual inspection with real-time prediction dashboard and confidence monitoring.</p>
-          <p class="tags">PyTorch | OpenCV | FastAPI</p>
-        </article>
-        <article class="card project tilt hologram">
-          <div class="project-thumb thumb-c" aria-hidden="true"></div>
-          <h3>Predictive Analytics Engine</h3>
-          <p>End-to-end forecasting pipeline with feature engineering, model comparison, and drift tracking.</p>
-          <p class="tags">Scikit-learn | Pandas | MLflow</p>
-        </article>
-      </div>
-      <div class="work-more">
-        <a class="btn btn-secondary" href="projects.html">View Full Case Studies</a>
+    <section class="section section-tinted" id="experience">
+      <div class="container">
+        <div class="section-heading split-heading" data-reveal>
+          <div>
+            <p class="section-label">Experience</p>
+            <h2>Work that connects people, programs, and technology.</h2>
+          </div>
+          <p>Clear execution, reliable follow-up, and technical curiosity shape the way I work.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-period">Oct 2024 — Present</div>
+            <div class="timeline-content">
+              <p class="timeline-company">EYouth</p>
+              <h3>Training Coordinator · Digital Egypt Pioneers Initiative (DEPI)</h3>
+              <p>Supporting training operations, schedules and sites, participant and team follow-up, reporting, event support, and stakeholder communication.</p>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-period">Jan 2024 — Aug 2025</div>
+            <div class="timeline-content">
+              <p class="timeline-company">almentor</p>
+              <h3>Training Coordinator · Digital Egypt Cubs Initiative (DECI)</h3>
+              <p>Supported the delivery of a nationwide digital-skills training initiative through structured coordination and participant follow-up.</p>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-period">2023 — 2027 (expected)</div>
+            <div class="timeline-content">
+              <p class="timeline-company">Egyptian Chinese University</p>
+              <h3>Artificial Intelligence Specialization · Computers & Information Systems</h3>
+              <p>Academic foundation in computing and AI, strengthened through applied software, data, and computer-vision projects.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="process container reveal" id="process">
-      <div class="section-head">
-        <p class="eyebrow">Workflow</p>
-        <h2>How I deliver AI projects</h2>
+    <section class="section container" id="projects">
+      <div class="section-heading split-heading" data-reveal>
+        <div>
+          <p class="section-label">Selected work</p>
+          <h2>Projects with clear scope and honest status.</h2>
+        </div>
+        <a class="text-link" href="projects.html">See project details <span aria-hidden="true">→</span></a>
       </div>
-      <div class="steps">
-        <article class="step tilt"><span>01</span><h3>Problem Framing</h3><p>Define data, objectives, and success KPIs for measurable outcomes.</p></article>
-        <article class="step tilt"><span>02</span><h3>Modeling</h3><p>Train and evaluate multiple baselines before selecting the best architecture.</p></article>
-        <article class="step tilt"><span>03</span><h3>Optimization</h3><p>Improve inference speed, robustness, and explainability for production readiness.</p></article>
-        <article class="step tilt"><span>04</span><h3>Deployment</h3><p>Deliver API and monitoring-ready AI system with clear handoff docs.</p></article>
+
+      <div class="project-grid">
+        <article class="project-card feature-project" data-reveal>
+          <div class="project-topline">
+            <span class="project-type">Computer vision</span>
+            <span class="status status-local">Active local prototype</span>
+          </div>
+          <h3>VisionGuard AI</h3>
+          <p>A safety-monitoring prototype with workspace-aware camera management, live MJPEG views, alerts and evidence handling, and computer-vision integrations.</p>
+          <ul class="tech-list" aria-label="VisionGuard technologies">
+            <li>React Native / Expo</li>
+            <li>TypeScript</li>
+            <li>Python & Flask</li>
+            <li>OpenCV</li>
+          </ul>
+          <span class="project-link project-link-muted">Source is maintained locally</span>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-topline">
+            <span class="project-type">Telemetry platform</span>
+            <span class="status status-local">Graduation prototype</span>
+          </div>
+          <h3>DriveMind AI</h3>
+          <p>An OBD-II telemetry capture prototype with validated sessions and readings, a documented API, a simulator, and a mobile proof of concept.</p>
+          <ul class="tech-list" aria-label="DriveMind technologies">
+            <li>NestJS</li>
+            <li>Prisma & PostgreSQL</li>
+            <li>Docker</li>
+            <li>Flutter</li>
+          </ul>
+          <span class="project-link project-link-muted">In active development</span>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-topline">
+            <span class="project-type">Full-stack web app</span>
+            <span class="status status-public">Open source</span>
+          </div>
+          <h3>Distributed Inventory Dashboard</h3>
+          <p>A distributed inventory-management dashboard built around a React interface, Node.js and Express services, and MongoDB replica-set storage.</p>
+          <ul class="tech-list" aria-label="Inventory dashboard technologies">
+            <li>React</li>
+            <li>Node.js & Express</li>
+            <li>MongoDB</li>
+          </ul>
+          <a class="project-link" href="https://github.com/abdelrahman-mohamed-ai/distributed-inventory-dashboard" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-topline">
+            <span class="project-type">Image processing</span>
+            <span class="status status-public">Open source</span>
+          </div>
+          <h3>Image Processing Labs Web App</h3>
+          <p>A Flask web application that demonstrates core image-processing operations implemented manually from scratch.</p>
+          <ul class="tech-list" aria-label="Image processing web app technologies">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Image processing</li>
+          </ul>
+          <a class="project-link" href="https://github.com/abdelrahman-mohamed-ai/image-processing-labs-webapp" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+        </article>
       </div>
     </section>
 
-    <section class="testimonials container reveal" aria-label="Testimonials">
-      <div class="section-head">
-        <p class="eyebrow">Feedback</p>
-        <h2>What collaborators say</h2>
-      </div>
-      <div class="cards two">
-        <article class="card quote">
-          <p>"Fast execution, clean communication, and careful UI implementation. The final result looked much more premium than expected."</p>
-          <h3>Startup Owner</h3>
-        </article>
-        <article class="card quote">
-          <p>"Very reliable frontend work. Responsive behavior and spacing details were done professionally across all breakpoints."</p>
-          <h3>Project Teammate</h3>
-        </article>
+    <section class="section section-tinted" id="skills">
+      <div class="container skills-layout">
+        <div class="section-heading" data-reveal>
+          <p class="section-label">Technical toolkit</p>
+          <h2>Focused tools for the work I actually build.</h2>
+        </div>
+        <div class="skill-groups" data-reveal>
+          <section class="skill-group" aria-labelledby="ai-skills">
+            <h3 id="ai-skills">AI & data</h3>
+            <p>Python, Machine Learning, Computer Vision, Image Processing, Data Analysis, Power BI</p>
+          </section>
+          <section class="skill-group" aria-labelledby="systems-skills">
+            <h3 id="systems-skills">Systems & web</h3>
+            <p>FastAPI, Flask, React, SQL / PostgreSQL, MongoDB, Docker, Git & GitHub</p>
+          </section>
+          <section class="skill-group" aria-labelledby="coordination-skills">
+            <h3 id="coordination-skills">Program delivery</h3>
+            <p>Training Operations, Participant Follow-up, Reporting, Event Support, Stakeholder Communication</p>
+          </section>
+        </div>
       </div>
     </section>
 
-    <section class="contact container reveal" id="contact">
-      <div class="section-head">
-        <p class="eyebrow">Contact</p>
-        <h2>Let's build your next AI product</h2>
+    <section class="contact-section container" id="contact" data-reveal>
+      <div>
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect around a practical technical challenge.</h2>
+        <p>For collaboration, project discussion, or professional opportunities, reach out through any of the channels below.</p>
       </div>
-      <p class="contact-text">Share your AI use case, available data, and timeline. I will reply with an actionable model and deployment plan.</p>
-
-      <form
-        id="contact-form"
-        class="contact-form"
-        data-emailjs-service="service_xxxxxxx"
-        data-emailjs-template="template_xxxxxxx"
-        data-emailjs-public="YOUR_EMAILJS_PUBLIC_KEY"
-        novalidate
-      >
-        <label>
-          Full Name
-          <input type="text" name="fullName" placeholder="Your full name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" placeholder="your.email@example.com" required />
-        </label>
-        <label>
-          Service
-          <select name="service" required>
-            <option value="">Select a service</option>
-            <option>AI Chatbot</option>
-            <option>Computer Vision Pipeline</option>
-            <option>NLP / Text Analytics</option>
-            <option>Custom AI Project</option>
-          </select>
-        </label>
-        <label class="full">
-          Project Brief
-          <textarea name="message" rows="5" placeholder="Tell me about your AI use case, dataset, expected output, and deadline." required></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary">Send Project Request</button>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
-      </form>
-
-      <div class="contact-links">
-        <a href="mailto:askasem76@gmail.com">askasem76@gmail.com</a>
-        <a href="https://wa.me/201006175210" target="_blank" rel="noreferrer">WhatsApp</a>
-        <a href="https://www.linkedin.com/in/abdelrahman-mohamed-79b49b321/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/abdelrahman762005" target="_blank" rel="noreferrer">GitHub</a>
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:askasem76@gmail.com">askasem76@gmail.com</a>
+        <a class="button button-secondary" href="https://wa.me/201006175210" target="_blank" rel="noreferrer">WhatsApp</a>
+      </div>
+      <div class="social-links" aria-label="Professional profiles">
+        <a href="https://www.linkedin.com/in/abdelrahman-mohamed-ai/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/abdelrahman-mohamed-ai" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Abdelrahman Mohamed Saber. Crafted with intent.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Abdelrahman Mohamed. Built around real work.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
