@@ -271,6 +271,7 @@ h3 { font-size: 1.15rem; letter-spacing: -0.035em; }
 .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .project-card { display: flex; flex-direction: column; min-height: 360px; padding: 28px; border-radius: 14px; }
 .feature-project {
+  grid-column: span 2;
   border-color: rgba(131, 221, 246, 0.42);
   background: linear-gradient(145deg, rgba(24, 55, 82, 0.9), rgba(12, 25, 43, 0.92));
 }
@@ -407,6 +408,7 @@ h3 { font-size: 1.15rem; letter-spacing: -0.035em; }
   .split-heading { display: block; }
   .split-heading > p { margin-top: 16px; }
   .project-grid { grid-template-columns: 1fr; }
+  .feature-project { grid-column: auto; }
   .timeline-item, .case-study { grid-template-columns: 1fr; gap: 16px; }
   .case-study { padding: 24px; }
   .case-study-meta { flex-direction: row; align-items: center; justify-content: space-between; }
@@ -424,4 +426,3 @@ h3 { font-size: 1.15rem; letter-spacing: -0.035em; }
   }
   [data-reveal] { opacity: 1; transform: none; }
 }
-
